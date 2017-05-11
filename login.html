@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			font-family: "宋体";
+		}
+		.clearfix:after,.cont .item:after,.form .item:after{ content:""; display:block; height:0; line-height:0; font-size:0; clear:both; visibility:hidden;}
+		.clearfix,.cont .item,.form .item{ *zoom:1;}
+		ul,li{list-style: none;}
+		a{text-decoration: none;}
+			.wrap{
+				width:960px;
+				margin:0 auto;
+			}
+			.header{
+				height:90px;
+				padding-top:20px;
+				margin-bottom:40px;
+			}
+			.logo_1{
+				display: inline;
+				float:left;
+				padding:22px 0 0 ;
+			}
+			.logo_1 a{
+				width: 187px;
+			    height: 68px;
+			    display: block;
+			    background: url(imgs/logonewb.png) no-repeat;
+			    text-indent: -999em;
+			    overflow: hidden;
+			}
+			.tit{
+				float:left;
+				height:45px;
+				line-height:45px;
+				font-family: "微软雅黑";
+				font-size:30px;
+				color:#767676;
+				margin-top:25px;
+				padding-left:22px;
+			}
+			.bgDiv{
+			    background: url(imgs/log_17.png) no-repeat 	center center/*#fafafa*/;
+			    width: auto;
+			    position: relative;
+			    height: 455px;
+				}
+				.lg_box{
+			    width: 421px;
+			    height: /*326px*/auto;
+			    border-top: 2px solid #D3D3D3;
+			    border-bottom-left-radius: 3px;
+			    border-bottom-right-radius: 3px;
+			    background: #fff;
+			    text-align: left;
+			    left: -53px;
+			    padding-bottom: 6px;
+			    position: relative;
+			    padding-top:50px;
+			    float:right;
+				}
+				.go_logtxt{
+					position: absolute;
+					left:65px;
+					top:-28px;
+				}
+				.go_logtxt span{
+					color: #da3e49;
+    				font-size: 16px
+				}
+				.go_reg{
+					position: absolute;
+					right:80px;
+					top:-28px;
+					color:#B7B7B7;
+				}
+				.go_reg a{
+					color:#5B5B5B;
+					text-decoration: none;
+					font-size:16px;
+				}
+				.go_reg a:hover{
+					text-decoration: underline;
+				}
+				.bartop{
+					background: url(imgs/bartop.png) no-repeat;
+					width:213px;
+					height:8px;
+					position: absolute;
+					top:-7px;
+					left:-1px;
+				}
+				.lg_form{
+					
+					position: relative;
+					width: 324px;
+				    margin-left: auto;
+				    margin-right: auto;
+				}
+				.lg_form .item{
+					position: relative;
+				    height: 50px;
+				    padding-left: 50px;
+				    border: 1px solid #D3D3D3;
+				    padding-bottom: 0;
+				    background: #f3f3f3;
+				}
+				.form .txt{
+				    float: left;
+				    width: 100%;
+				    height: 20px;
+				    line-height: 20px;
+				    padding: 15px 0;
+				    border: none;
+				    background: #fff;
+				}
+				.lg_form .item #username{
+					    padding-left: 10px;
+					    width: 265px;
+					    position: absolute;
+					    right: 0;
+					    outline: none;
+				}
+				.lg_form .item i{
+					background: url(imgs/newico_lg.png)no-repeat 0 0;
+					width: 20px;
+					height:23px;
+					position: absolute;
+					left:15px;
+					top:15px;
+				}
+				.lg_form .item #password{
+					padding-left:10px;
+					width: 265px;
+				    position: absolute;
+				    right: 0;
+				}
+				.lg_form .item label{
+					position: absolute;
+					left:0;
+					top:0;
+					line-height: 50px;
+					width: 47px;
+					text-align: right;
+					color:#999;
+					font-size: 14px;
+				}
+				.mb10{
+					margin-bottom:10px;
+				}
+				.lg_form .item .txt{
+					float: left;
+				    width: 100%;
+				    height: 20px;
+				    line-height: 20px;
+				    padding: 15px 0;
+				    border: none;
+				    background: #fff;
+				    color: #ababab;
+				}
+				.lg_form .valid_code {
+    			 width: 90px;
+   				 padding-left: 50px;
+   				 
+   				}
+   				 .valid_code #validation{
+   					outline: none;
+   				}
+   				.lg_form .valid_img{
+   					position: absolute;
+   					right:-177px;
+   					top:-1px;
+   					width:170px;
+   					height:50px;
+   				}
+   				.lg_form .valid_img img{
+   					width:120px;
+   					height:50px;
+   					margin-right: 3px;
+    				border: 1px solid #eee;
+   				}
+   				
+   				.lg_box .bd2{
+   					float:right;
+   					display: inline;
+   				}
+   				.lg_box .bd2 a{
+   					font-size:12px;
+   					text-decoration: none;
+   				}
+   				.lg_form .btn{
+   					text-indent: 0;
+				    width: 325px;
+				    height: /*42px*/54px;
+				    line-height: 30px;
+				    display: block;
+				    background: /*#E91B1B*/#c23741;
+				    border-radius: 3px;
+				    color: #fff;
+				    font-size: 24.08px;
+				    font-family: "微软雅黑";
+				    text-align: center;
+				    text-decoration: none;
+				    font-weight: bold;
+				    cursor: pointer;
+				    border:none;
+   				}
+   				.textDiv{
+   					margin-top:15px;
+   					font-size: 12px;
+   					color:#919191;
+   				}
+   				.textDiv ul li{
+   					float:left;
+   				}
+   				.footer{
+				    padding-top: 40px;
+    				color: #636262;
+    				text-align: center;
+   				}
+   				.footer p{
+   					text-align: center;
+   					display: block;
+   					font-size: 12px;
+
+   				}
+   				.footer p a{
+   					padding-top:40px;
+   					color: #636262;
+   					text-align: center;
+   					
+   				}
+   				.footer p a:hover{
+   					text-decoration: underline;
+   				}
+   				.footer .copyright{
+   					line-height: 22px;
+   					text-align: center;
+   				}
+
+		</style>
+	</head>
+	<body>
+	<div class="wrap">
+		<div class="header">
+			<h1 class="logo_1">
+				<a href="index.html"></a>
+			</h1>
+		<b class="tit">用户登录</b>
+			
+		</div>
+	</div>
+	<div class="bgDiv">
+		<div class="wrap">
+			<div class="wrap2">
+				<div class="tb_module">
+					<div class="sys_login2">
+						<div class="lg_box">
+							<div class="go_logtxt">
+								<span>登录厂家网</span>
+							</div>
+							<div class="go_reg">
+								<a href="register.html">免费注册>></a>
+							</div>
+							<div class="bartop"></div>
+							<div class="form lg_form" style="margin-top:16px;">
+								<div class="bd">
+									<div class="item" style="margin-bottom:37px;">
+										<i class="ico_un"></i>
+										<input type="text" id="username" class="txt" def value placeholder="邮箱/用户名/已验证手机/会员卡">
+									</div>
+									<p id="error_ds" style="display:none;">用户名错误</p>
+									<div class="item mb10 ">
+										<i class="ico_psw"></i>
+										<input type="password" id="password" class="txt txtfb" placeholder="登录密码或初始密码">
+									</div>
+									<div class="item valid_code" id="captcha_div">
+										<label class="lab">验证码</label>
+										<input type="text" class="txt" id="validation">
+										<p class="valid_img">
+											<img src="imgs/captcha.jpg">
+										</p>
+									</div>
+								</div>
+							
+							<div class="clearfix" style="margin-top:15px;">
+								<div class="bd2">
+									<a href="###">忘记密码?</a>
+								</div>
+							</div>
+							<div class="btn_bg" style="margin-top:30px">
+								<button class="btn btnSubmit" id="btn_lg">登&nbsp;&nbsp;录</button>
+							</div>
+							<div class="textDiv">
+								<p>使用合作账号登录厂家网:</p>
+								<ul class="listDiv clearfix" style="margin-top:5px">
+									<li>
+										<a href="###"><img src="imgs/Connect_logo_7.png"></a>
+									</li>
+									<li style="margin-left:20px">
+										<a href="###"><img src="imgs/loginbtn_03.png"></a>
+									</li>
+									<li style="margin-left:20px">
+										<a href="###"><img src="imgs/icon24_wx_button.png"></a>
+									</li>
+								</ul>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+	
+		<p style="margin-bottom:24px">
+			<a href="">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="">联系客服</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="">商家入驻</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="">隐私保护</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="">免责条款</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+			<a href="">快递查询</a>
+			
+		</p>
+		<p class="copyright">版权所有 厂家网商城 保留所有版权 ICP备案证书号:粤ICP备12093889号</p>
+		<p class="copyright2" style="font-family:Arial,Helvetica,sans-serif">Copyright © 2012-2013 www.cjwsc.com,All Rights Reserved</p>
+	</div>
+	</div>
+	
+<script data-main="js/plug/login.js" async="true" src="require.js"></script>
+	</body>
+</html>

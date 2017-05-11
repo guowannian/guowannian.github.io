@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title></title>
+	<link rel="stylesheet" type="text/css" href="css/cart.css">
+	<link rel="stylesheet" type="text/css" href="css/public.css">
+	</head>
+	<body>
+<div class="head">
+<div class="top">
+	<div class="wrap">
+		<ul class="fl top-left">
+			<li><a href="#" class="cap-p">
+					<i class="ico-tel"></i>
+					移动客户端
+					<i class="arr"></i>
+				</a>
+			</li>
+			<li><a href="#" class="cap-p">
+					<i class="ico-tel"></i>
+					微信服务号
+					<i class="arr"></i>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				<i class="ico-wb"></i>
+				官方微博
+				</a>
+			</li>
+			<li class="cap-p4">
+				欢迎光临厂家网
+				<span class="user">
+					<a href="login.html">请登录</a>
+				</span>
+				<a href="#">免费注册</a>
+			</li>
+		</ul>
+		<ul class="fr top-right">
+			<li class="top-p">
+				<a href="#">
+				我的订单
+				</a>
+			</li>
+			<li class="top-d">
+				<a href="#">
+				我的厂家网
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				服务中心
+				</a>
+				<i class="arr"></i>
+				<div></div>
+			</li>
+			<li>
+				<a href="#">
+				厂家网公告
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				厂家网论坛
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				供应商登录
+				</a>
+			</li>
+			<li>
+				<a href="#">
+				网站导航
+				</a>
+				<i class="arr"></i>
+				<div></div>
+			</li>
+			
+		</ul>
+	</div>
+</div>
+<div id="content">
+	<div class="wrap2">
+		<div class="header">
+			<div class="fl logo">
+				<a href="#" class="fl"></a>
+			</div>			
+		</div>
+	</div>
+	<div class="wrap3">
+		<div class="pd_gw">
+			<div id="cartlist">
+				<div class="shopHdtext">
+					<ul class="Hdlist">
+						<li class="wh_10">
+						<label>
+							<input type="checkbox" class="cart_item select-all-btn">全选
+						</label>	
+						</li>
+						<li class="wh_50" style="width:230px">商品</li>
+						<li class="wh_50" style="width:225px;padding-left:15px">商品规格</li>
+						<li class="wh_10_tc">单价(元)</li>
+						<li class="wh_10_tc">数量</li>
+						<li class="wh_10_tc">小计(元)</li>
+						<li class="wh_10_tc">操作</li>
+					</ul>
+				</div>
+				<form id="to_buy" method="post">
+					
+				</form>
+				<div class="promptDown mt20">
+					<ul class="ptdwlist">
+						<li class="wh_d6">
+							<label>
+								<input type="checkbox" class="cart_item select-all-btn" >全选
+							</label>
+						</li>
+						<li class="wh_d10">
+							<a href="###" class="deleteAll">删除选中的商品</a>
+						</li>
+						<li class="wh_d55">
+							<a href="###" class="focusAll">加入关注</a>
+						</li>
+						<li class="wh_d10">
+							已选商品
+							<span class="fSize_18 sptext user-goods-amount" id="item_total_num">4</span>
+							件
+						</li>
+						<li class="wh_d16">
+							<div class="fpdw">
+							总价(不含运费)：
+							<span class="fSize_18 sptext" id="totalprice">
+								¥ <span id="item_total_price" class="user-goods-money">686.00</span>
+							</span>
+							</div>
+							<div class="fpdw_1">
+								已节省：¥
+								<span class="item_total_cut">0</span>
+							</div>
+						</li>
+					</ul>
+					<a class="playGo">去结算</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/html" id="cart-list">
+{{each cart as v k}}
+<div class="clearfix cart-goods-item" data-id="{{k}}">
+		<p class="mt25 mb10 ppl_2">
+			<label>
+			<input type="checkbox" checked="true" class="cart_item item_parent" id="" data-id="">
+			{{data.goods_tag}}
+			</label>
+		</p>
+		<div class="shopingDiv">
+			<div class="clearfix" style="height:50px;">
+				<div class="priceNum">
+					<p class="fSize_14 mt15 ml_10">{{data.color[k].sale_price * v.amount}}</p>
+				</div>
+			</div>
+			<ul class="commodiylist">
+				<li class="wh_60">
+					<label class="fl">
+						<input type="checkbox" checked="true" class="cart_item cart_goods_item item_child">
+					</label>
+					<div class="shopImg">
+						<a href="###"><img src="{{data.goods_pic_small}}" style="width:80px;height:80px"></a>
+					</div>
+					<div class="shopText">
+						<a href="###">{{data.goods_name}}</a>
+					</div>
+				</li>
+				<li class="wh_20 h_100">
+					<p class="colorSize">
+						<span>颜色:淡蓝色 尺码:{{data.color[k].type}}</span>
+					</p>
+				</li>
+				<li class="wh_10_tc">
+					<p class="colorSize goods-price" style="font-size:14px;margin-bottom:5px;">
+						{{data.color[k].sale_price}}
+					</p>
+				</li>
+				<li class="wh_10_tc">
+					<div class="shopAdd">
+						<b class="amount-decrease">-</b>
+						<input type="text" class="inptext change" value="{{v.amount}}">
+						<b class="amount-increase">+</b>
+					</div>
+				</li>
+				<li class="wh_10_tc">
+					<span class="fSize_14 item_price goods-money">{{data.color[k].sale_price * v.amount}}</span>
+				</li>
+				<li class="wh_10_tc">
+					<a href="###" class="bttn delete">删除</a>
+					<a href="###" class="bttn mt5">已关注</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	{{/each}}
+</script>
+<script src="js/lib/jquery-1.11.3.js" ></script>
+<script src="js/plug/jquery.cookie.js" ></script>
+<script src="js/plug/template.js" ></script>
+<script src="js/plug/layer/layer.js" ></script>
+<script src="js/js/cart.js" ></script>
+	</body>
+</html>

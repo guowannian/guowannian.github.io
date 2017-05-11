@@ -1,0 +1,89 @@
+html,
+body,
+div,
+img {
+	margin: 0;
+	padding: 0;
+}
+
+/* banner start */
+.banner {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 480px;
+	margin: 0 auto;
+}
+
+.banner .img-wrap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.banner .img-wrap img {
+	position: absolute;
+	top: 0;
+	left: -330px;
+	opacity: 0;
+}
+.banner .img-wrap img:nth-child(1) {
+	opacity: 1;
+}
+
+.banner .arrow {
+	display: none;
+	position: absolute;
+	top: 50%;
+	width: 45px;
+	height: 82px;
+	margin-top: -41px;
+	text-align: center;
+	line-height: 82px;
+	background-color: #ccc;
+	color: #fff;
+	cursor: pointer;
+	font-size: 44px;
+	opacity: 0.5;
+}
+.banner:hover .arrow {
+	display: block;
+}
+.banner .arrow:hover {
+	background-color: #000;
+}
+.banner .arrow-left {
+	left: 185px;
+}
+.banner .arrow-right {
+	right: 181px;
+}
+
+.banner .circle {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	width: 140px;
+	height: 10px;
+	padding: 5px;
+	margin-left: -27px;
+}
+
+.banner .circle-item {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #000;
+	line-height: 20px;
+	text-align: center;
+	color:#fff;
+	font-weight: 600;
+}
+.banner .circle-item.active {
+	background-color: #c33;
+}
+.banner .circle-item:nth-child(4) {
+	margin-right: 0px;
+}

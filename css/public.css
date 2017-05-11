@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+h1,h2,h3,h4,h5,h6,ul,ol,dt,dd,td,img,form,input,html,body,legend,fieldset{margin:0;padding:0;}
+ul,ol{list-style:none;}
+i{font-style:normal}
+a{text-decoration:none;color:black;}
+body{font-family: "宋体","Microsoft YaHei",Arial;font-size:12px;}
+.clear:after{content:".";height:0;display:block;visibility:hidden;overflow:hidden;clear:both;}
+.noborder{border:none;}
+.fl{float:left;}
+.fr{float:right;}
+.pr{position:relative;}
+.pa{position: absolute;}

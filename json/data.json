@@ -1,0 +1,46 @@
+{
+	"goods_id": 10001,
+	"goods_tag":"衣立雅",
+	"goods_name": "衣立雅2017春装新款女装修身包臀裙春季中长款v领针织连衣裙",
+	"goods_price": 148.00,
+	"goods_pic_small": "imgs/small2.jpg",
+	"goods_pic_large": "imgs/small2.jpg",
+	"color": {
+		"1000101": {
+			"id": "1000101",
+			"type": "L",
+			"sale_price": "89.00",
+			"stock": 89.00
+		},
+		"1000102": {
+			"id": "1000102",
+			"type": "M",
+			"sale_price": "128.00",
+			"stock": 118.00
+		},
+		"1000103": {
+			"id": "1000103",
+			"type": "S",
+			"sale_price": "89.00",
+			"stock": 89.00
+		},
+		"1000104": {
+			"id": "1000104",
+			"type": "XL",
+			"sale_price": "78.00",
+			"stock": 68.00
+		},
+		"1000105": {
+			"id": "1000105",
+			"type": "XXL",
+			"sale_price": "99.00",
+			"stock": 89.00
+		},
+		"1000106": {
+			"id": "1000106",
+			"type": "XXXL",
+			"sale_price": "99.00",
+			"stock": 78.00
+		}
+	}
+}
